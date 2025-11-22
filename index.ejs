@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body class="<%= condition ? condition.toLowerCase() : '' %>">
+    <h1> Weather-App </h1>
+    <div class="container">
+        <form action="/get-city" method="post">
+            <div class="weather">
+                <h2>
+                    Enter your city name:
+                </h2>
+                <input type="text" id="get" name="cityName" placeholder="Enter your city name">
+                <button type="submit" class="btn btn-primary">submit</button>
+        </form>
+        <% if (temp !=null) { %>
+
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">
+                        <%= city %>
+                    </h4>
+                </div>
+
+                <div class="aqi-box">
+                    <h3>AQI Level: <%= aqi %>
+                    </h3>
+                    <p>
+                        <%= aqi===1 ? "Good" : aqi===2 ? "Fair" : aqi===3 ? "Moderate" : aqi===4 ? "Poor" : "Very Poor"
+                            %>
+                    </p>
+                </div>
+
+                <div class="card-body container ">
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li class="card-title pricing-card-title">
+                            <h4>Temprature : </h4>
+                            <%= temp %>
+                        </li>
+                        <li>
+                            <h4> Feels Like :</h4>
+                            <%= feelsLike %>
+                        </li>
+                        <li>
+                            <h4>AQI :</h4>
+                            <%= aqi %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <% } %>
+
+                <% if(error) { %>
+
+                    <%= error %>
+
+                        <% } %>
+    </div>
+    </div>
+
+    <script src="/weather app/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+/* GLOBAL STYLING*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #fceabb, #f8b500);
+    min-height: 100vh;
+}
+
+/* Center Title */
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* MAIN CONTAINER STYLING*/
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Weather Input Box */
+.weather {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+/* Input */
+.weather input {
+    padding: 10px;
+    border-radius: 8px;
+    width: 260px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* CARD RESULT STYLING */
+
+
+.card {
+    width: 350px;
+    margin: 40px auto;
+    border-radius: 15px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(5px);
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0.1) !important;
+    text-align: center;
+}
+
+.card-header h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h1 {
+    font-size: 26px;
+    color: #444;
+}
+
+.card-body ul li {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/*  BUTTON STYLE */
+
+
+button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/*    ERROR MESSAGE */
+
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* WEATHER-BASED BACKGROUNDS */
+
+
+body.clear {
+    background: linear-gradient(to top, #87CEEB, #fff);
+}
+
+body.clouds {
+    background: linear-gradient(to top, #d7d2cc, #304352);
+}
+
+body.rain {
+    background: linear-gradient(to top, #4e54c8, #8f94fb);
+}
+
+body.snow {
+    background: linear-gradient(to top, #e6e9f0, #eef1f5);
+}
+
+body.haze, 
+body.mist,
+body.fog {
+    background: linear-gradient(to top, #757f9a, #d7dde8);
+}
+
+.aqi-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    text-align: center;
+}
+
+.aqi-box h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.aqi-box p {
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
