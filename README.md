@@ -57,7 +57,7 @@ OpenWeatherMap API (Weather + Air Pollution)
 
 ▶️ How to Run Locally
 1️⃣ Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Kunalsingh8542/Weather-App
 
 2️⃣ Install dependencies
 npm install
